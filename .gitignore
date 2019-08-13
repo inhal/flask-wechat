@@ -4,3 +4,4 @@ Pipfile.lock
 __pycache__
 .idea
 .vscode
+app/config/secure.py
