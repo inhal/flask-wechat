@@ -1,0 +1,6 @@
+**/.DS_Store
+*.pyc
+Pipfile.lock
+__pycache__
+.idea
+.vscode
