@@ -12,9 +12,9 @@ class ExceptionHandle(HTTPException):
     error_code: 自定义错误码，参照项目根目录 error_code.md 文件
     request: 请求 url。前面为 HTTP 动词，后面为不带参数 url
     """
-    code = 500
+    code = 500  # HTTP状态码
     msg = 'sorry, we make a mistake.'
-    error_code = 999
+    error_code = 999  # 自定义错误码
 
     def __init__(self, code=None, msg=None, error_code=None):
         if code is not None:

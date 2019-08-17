@@ -6,4 +6,4 @@ user = api
 
 @user.route('/v1/user/show')
 def show():
-    raise ExceptionHandle(404, 'not fond', 10001)
+    raise ExceptionHandle(404, 'not fond', 1001)
