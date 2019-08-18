@@ -1,9 +1,13 @@
+from flask import request
+
 from app.api import api
-from app.libs.exception_handle import ExceptionHandle
+from app.validator.forms import LoginForm
 
 user = api
 
 
-@user.route('/v1/user/show')
-def show():
-    raise ExceptionHandle(404, 'not fond', 1001)
+@user.route('/user/login', methods=['POST'])
+def login():
+    data = request.json
+    form = LoginForm(data=data)
+    form.validate_for_api()
