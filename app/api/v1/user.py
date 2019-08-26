@@ -11,3 +11,4 @@ def login():
     data = request.json
     form = LoginForm(data=data)
     form.validate_for_api()
+    return form.data
