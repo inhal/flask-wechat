@@ -11,6 +11,7 @@ wtforms = "==2.2.1"
 cymysql = "*"
 flask-sqlalchemy = "==2.4.0"
 requests = "==2.22.0"
+pyjwt = "*"
 
 [requires]
 python_version = "3.7"
